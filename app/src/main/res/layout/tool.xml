@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:navigationIcon="@drawable/back"
+    app:title="Score 17"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#050505"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_height="50dp"
+            android:src="@drawable/info"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score 17"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/r1"
+        android:background="#404040"
+        android:id="@+id/r2">
+
+    </RelativeLayout>
+</RelativeLayout>

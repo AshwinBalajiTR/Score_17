@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".chatprofile">
+    <RelativeLayout
+        android:background="@drawable/al"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:text="Create a new Account "
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:src="@drawable/userr"
+            android:textColor="#2993ae"
+            android:id="@+id/txt"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/a"
+            android:layout_below="@+id/txt"
+            android:layout_width="wrap_content"
+            android:text="Profile Info"
+            android:textColor="#2993ae"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/b"
+            android:layout_below="@+id/a"
+            android:layout_width="wrap_content"
+            android:text="Set your profile name and optional profile pic"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/un"
+            android:elevation="20dp"
+            android:layout_below="@+id/b"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:hint="Profile Name"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:textColorHint="#6B6B6B"
+            android:textColor="#2993ae"
+            android:layout_centerHorizontal="true"
+            android:inputType="text" />
+
+        <RelativeLayout
+            android:id="@+id/update"
+            android:layout_width="350dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textSize="18dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/un"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:background="@drawable/btn"
+            android:textAllCaps="false">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

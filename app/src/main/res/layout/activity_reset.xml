@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+    <RelativeLayout
+        android:background="@drawable/al"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password !"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#2993ae"
+            android:id="@+id/txt"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/editText"
+            android:elevation="20dp"
+            android:layout_below="@+id/txt"
+            android:layout_width="350dp"
+            android:drawableStart="@drawable/mail"
+            android:layout_height="70dp"
+            android:hint="Email"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:textColorHint="#6B6B6B"
+            android:textColor="#2993ae"
+            android:layout_centerHorizontal="true"
+            android:inputType="textEmailAddress" />
+
+        <RelativeLayout
+            android:id="@+id/button"
+            android:layout_width="350dp"
+            android:elevation="20dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:textSize="18dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            android:background="@drawable/btn"
+            android:textAllCaps="false">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash"
+    android:layout_height="match_parent"
+    tools:context=".cgpa">
+    <include
+        android:layout_alignParentTop="true"
+        layout="@layout/tool"
+        android:id="@+id/tool"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_below="@+id/tool"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mar">
+                <TextView
+                    android:id="@+id/t1"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="I YEAR"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#57B6F2"
+                    android:layout_marginTop="10dp"/>
+                <GridLayout
+                    android:layout_below="@+id/t1"
+                    android:rowCount="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:background="@drawable/al"
+                    android:columnCount="2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/t11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_marginRight="8dp"
+                        android:layout_rowWeight="2"
+                        android:layout_column="0"
+                        android:layout_columnWeight="2"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/arev"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 1"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/t12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="1"
+                        android:layout_columnWeight="2"
+                        android:layout_marginLeft="10dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/a"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 2"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mar">
+                <TextView
+                    android:id="@+id/t2"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="II YEAR"
+                    android:textColor="#57B6F2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+                <GridLayout
+                    android:layout_below="@+id/t2"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:rowCount="1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/al"
+                    android:columnCount="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/t23"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="0"
+                        android:layout_columnWeight="2"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/brev"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 3"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/t24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_columnWeight="2"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/b"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 4"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mar">
+                <TextView
+                    android:id="@+id/t3"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="III YEAR"
+                    android:textColor="#57B6F2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+                <GridLayout
+                    android:layout_below="@+id/t3"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:rowCount="1"
+                    android:background="@drawable/al"
+                    android:columnCount="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/t35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_marginRight="8dp"
+                        android:layout_column="0"
+                        android:layout_columnWeight="2"
+
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/crev"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 5"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/t36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_columnWeight="2"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/c"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 6"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mar">
+                <TextView
+                    android:id="@+id/t4"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="IV YEAR"
+                    android:textColor="#57B6F2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"/>
+                <GridLayout
+                    android:layout_below="@+id/t4"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:rowCount="1"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/al"
+                    android:columnCount="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/t47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="0"
+                        android:layout_marginRight="8dp"
+                        android:layout_columnWeight="2"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/drev"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 7"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/t48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_row="0"
+                        android:layout_rowWeight="2"
+                        android:layout_column="1"
+                        android:layout_columnWeight="2"
+                        android:layout_marginLeft="10dp"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:background="@drawable/d"
+                        android:textColor="#fff"
+                        android:textSize="20dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SEM - 8"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </GridLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

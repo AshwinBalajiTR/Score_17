@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0B0B0B"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".c2">
+    <include
+        android:layout_alignParentTop="true"
+        layout="@layout/tool"
+        android:id="@+id/tool"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <ScrollView
+        android:layout_below="@id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/e1"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/al"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="20dp"
+                app:hintTextColor="#3dc094"
+                android:textColorHint="#3dc094"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="S E M - 1   G P A">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ee1"
+                    android:textColor="#fff"
+                    android:background="@drawable/al"
+                    android:maxLength="6"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="#3dc094"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/e2"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/al"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginRight="20dp"
+                app:hintTextColor="#3dc094"
+                android:textColorHint="#3dc094"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="S E M - 2   G P A">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ee2"
+                    android:textColor="#fff"
+                    android:background="@drawable/al"
+                    android:maxLength="6"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="#3dc094"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/b1"
+                android:textColor="#fff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate"
+                    android:layout_centerInParent="true"
+                    android:textSize="20dp"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/disk"
+                android:padding="8dp"
+                android:visibility="invisible"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/al">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/mark"
+                    android:gravity="center"
+                    android:background="@drawable/gs"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/s1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 1 : "
+                        android:textSize="20dp"
+                        android:textColor="#fff"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_toEndOf="@+id/s1"
+                        android:textSize="20dp"
+                        android:id="@+id/ss1"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 1 :"
+                        android:textColor="#2b902B"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/s2"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/s1"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 2 : "
+                        android:textColor="#fff"/>
+                    <TextView
+                        android:id="@+id/ss2"
+                        android:layout_width="wrap_content"
+                        android:layout_toEndOf="@+id/s1"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/s1"
+                        android:layout_height="wrap_content"
+                        android:text="Sem 2 :"
+                        android:textColor="#2b902B"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dd"
+                    android:gravity="center"
+                    android:padding="10dp">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/aaa"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your CGPA is "
+                            android:textColor="#fff"
+                            android:textSize="20dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/bbb"
+                        android:layout_toEndOf="@+id/aaa"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:id="@+id/dist"
+                            android:textStyle="bold"
+                            android:inputType="numberDecimal"
+                            android:textColor="#2b902B"
+                            android:textSize="20dp"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/dd"
+                    android:id="@+id/share"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/btn">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:layout_centerInParent="true"
+                        android:textSize="15dp"
+                        android:textColor="#fff"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
