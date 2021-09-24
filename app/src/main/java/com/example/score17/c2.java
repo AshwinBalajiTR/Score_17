@@ -92,7 +92,7 @@ public class c2 extends AppCompatActivity {
                                 @Override
                                 public void onClick(View v) {
                                     Intent intent = new Intent(android.content.Intent.ACTION_SEND);
-                                    String shareBody = "Hey here's my score obtained through *SCORE 17* application,"+'\n'+'\n'+"*GPA [Sem - 1] :* "+t+'\n'+"*GPA [Sem - 2] :* "+tp+'\n'+'\n'+"*CGPA till Sem - 2 :* "+ cv+'\n'+'\n'+"Now check yours using *SCORE 17* using the link below ,"+'\n'+"www.google.com";
+                                    String shareBody = "Hey here's my score obtained through *SCORE 17* application,"+'\n'+'\n'+"*GPA [Sem - 1] :* "+t+'\n'+"*GPA [Sem - 2] :* "+tp+'\n'+'\n'+"*CGPA till Sem - 2 :* "+ cv+'\n'+'\n'+"Now check yours using *SCORE 17* using the link below ,"+'\n'+"https://appsenjoy.com/files/87c667286cb690ad4136be63211201ee.apk";
                                     intent.setType("text/plain");
                                     intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.share_subject));
                                     intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
